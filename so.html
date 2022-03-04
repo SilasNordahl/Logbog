@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Silas Nordahl's Logbog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+    <body>
+        <!-- Navigation bar HTML -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Silas Nordahl</a>
+            <a href="informatik.html" class="active">INF</a>
+            <a href="matematik.html">INF 2</a>
+            <a href="dansk.html">DAN</a>
+            <a href="engelsk.html">ENG</a>
+            <a href="so.html">#nmb</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+            
+        <!-- Accordion HTML -->
+        <div class="content" id="so">
+            <div class="element middle">
+                
+                <div class="panel">
+                <p>
+                </div>
+            </div>
+          
+               <!--Random number-->
+                <body>
+                
+                <p id="nr"></p>
+                <button onclick="random()">Random Number</button>
+                
+                <script>
+                 function random(){
+                
+                document.getElementById("nr").innerHTML = Math.floor(Math.random() * 1000);
+                }
+                </script>
+                
+                </body>
+
+               
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
